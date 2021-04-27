@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cifraCesar.css" type="text/css">
+    <title>Mensagem Oculta</title>
+</head>
+<body>
+    <div id="container">
+        <h1 id="titulo">
+            Mensagem Oculta
+        </h1>
+        <h2 id="subtitulo">Cifra de César e Base64</h2>
+        <form>
+            <div id="campoSelect">
+                <select name="select" id="select">
+                    <option value="optionEscolha" name="selecao" id="optionEscolha">Escolha</option>
+                    <option value="optionCifraDeCesar" name="selecao" id="optionCifraDeCesar">Cifra de César</option>
+                    <option value="optionBase64" name="selecao" id="optionBase64">Base64</option>
+                </select>
+            </div>
+            <div id="botoesRadio">
+                <label for="btnRadioCodificar">Codificar</label>
+                <input type="radio" name="btnRadio" id="btnRadioCodificar" >
+                <label for="btnRadioDecodificar">Decodificar</label>
+                <input type="radio" name="btnRadio" id="btnRadioDecodificar">
+            </div>
+            
+            <div id="textAreas">
+                <textarea name="textArea1" id="textArea1" cols="50" rows="10" wrap="on"></textarea>
+                <textarea name="textArea2" id="textArea2" cols="50" rows="10" wrap="on"></textarea>
+            </div>
+            <div id="botoes">
+                <button id="codificar">Codificar Mensagem!</button>
+                <button id="decodificar">Decodificar Mensagem!</button>
+            </div>
+    </form>
+    </div>
+<script src="cifraCesar.js" type="text/javascript"></script>
+</body>
+</html>
